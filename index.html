@@ -479,7 +479,7 @@ navigator.geolocation.getCurrentPosition(position => {
     .then(response => response.json())
     .then(data => {
         document.getElementById('weather').innerHTML = `
-             <p> Weather : ${data.main.temp}°C - : ${data.weather[0].description}</p>
+             <p> Jhansi's Weather : ${data.main.temp}°C - : ${data.weather[0].description}</p>
         `;
     })
     .catch(error => console.log(error));
