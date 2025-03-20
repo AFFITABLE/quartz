@@ -491,8 +491,8 @@ navigator.geolocation.getCurrentPosition(position => {
     .then(response => response.json())
     .then(data => {
         document.getElementById('weather').innerHTML = `
-            <p>Temperature: ${data.main.temp}°C</p>
-            <p>Weather: ${data.weather[0].description}</p>
+             <p><img src="coming-soon.jpg">Temperature in Jhansi: ${data.main.temp}°C</p>
+                <p>Weather: ${data.weather[0].description}</p>
         `;
     })
     .catch(error => console.log(error));
