@@ -113,7 +113,7 @@
         <main>
     <marquee> <div id="weather">
 
- <span class="new-badge">HOT</span>
+
     
 
         
@@ -351,7 +351,7 @@ navigator.geolocation.getCurrentPosition(position => {
     .then(response => response.json())
     .then(data => {
         document.getElementById('weather').innerHTML = `
-             <p> Jhansi's Weather : ${data.main.temp}°C - : ${data.weather[0].description}</p>
+             <p> Jhansi's Weather  <span class="new-badge">HOT</span> : ${data.main.temp}°C - : ${data.weather[0].description}</p>
         `;
     })
     .catch(error => console.log(error));
